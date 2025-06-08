@@ -47,6 +47,7 @@ module.exports = {
       },
       animation: {
         'gradient-move': 'gradient-move 8s ease-in-out infinite',
+        'spin-slow': 'spin 18s linear infinite',
       },
       keyframes: {
         'gradient-move': {

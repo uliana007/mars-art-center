@@ -1,0 +1,17 @@
+/* Оставляем ваш сдвиг правого блока */
+.hero-links-shift {
+  margin-right: 60px;
+}
+@media (max-width: 768px) {
+  .hero-links-shift {
+    margin-right: 0;
+  }
+}
+
+/* Дополнительная glow-анимация на hover, если нужна для ссылок */
+.hero-links-shift a:hover, .hero-links-shift a:focus-visible {
+  filter: drop-shadow(0 0 12px #44ffffcc);
+  /* или используйте box-shadow для ещё большего эффекта */
+  /* box-shadow: 0 0 20px 3px #3af0ff99; */
+  /* transition уже есть через Tailwind */
+}
