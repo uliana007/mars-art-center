@@ -1,0 +1,19 @@
+{
+  "menu": {
+    "events": "Events",
+    "exhibitions": "Exhibitions",
+    "about": "About",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "M’ARS Center for Contemporary Art",
+    "subtitle": "Immersive exhibitions, VR shows, performances — next-gen art in central Moscow.",
+    "cta": "Buy tickets"
+  },
+  "events": {
+    "title": "Current Events"
+  },
+  "event": {
+    "more": "More"
+  }
+}
