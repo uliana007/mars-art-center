@@ -1,23 +1,26 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import HttpBackend from "i18next-http-backend";
+import ru from "./ru.json";
+import en from "./en.json";
+
+// Автоматическое определение языка браузера
+const getDefaultLang = () => {
+  const lang = localStorage.getItem("i18nextLng") || navigator.language || navigator.userLanguage;
+  if (lang.startsWith("ru")) return "ru";
+  if (lang.startsWith("en")) return "en";
+  return "ru";
+};
 
 i18n
-  .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    lng: "ru",
+    resources: {
+      ru: { translation: ru },
+      en: { translation: en },
+    },
+    lng: getDefaultLang(),
     fallbackLng: "ru",
-    supportedLngs: ["ru", "en"],
-    backend: {
-      loadPath: "/locales/{{lng}}.json"
-    },
-    interpolation: {
-      escapeValue: false
-    },
-    react: {
-      useSuspense: false
-    }
+    interpolation: { escapeValue: false },
   });
 
 export default i18n;

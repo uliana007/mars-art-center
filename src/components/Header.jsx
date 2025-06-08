@@ -16,10 +16,9 @@ export default function Header({ theme, setTheme }) {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/90 dark:bg-[#121212]/90 backdrop-blur-xl z-50 border-b border-gray-200 dark:border-[#222]">
+    <header className="fixed top-0 left-0 w-full bg-light/90 dark:bg-dark/90 backdrop-blur-xl z-50 border-b border-gray-200 dark:border-[#222]">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        {/* Logo */}
-        <a href="/" className="flex items-center gap-2 font-bold text-xl uppercase tracking-tight text-accent dark:text-[#3399FF]">
+        <a href="/" className="flex items-center gap-2 font-bold text-xl uppercase tracking-tight text-accentBlue dark:text-accentBlueDark font-mont">
           <img src="/logo.svg" alt="M’ARS" className="h-8 w-8" />
           M’ARS
         </a>
@@ -29,10 +28,10 @@ export default function Header({ theme, setTheme }) {
             <a
               key={item.title}
               href={item.href}
-              className="relative px-2 py-1 font-medium text-[#1A1A1A] dark:text-[#E0E0E0] transition group"
+              className="relative px-2 py-1 font-mont font-semibold text-accentBlue dark:text-accentBlueDark transition group"
             >
-              {t(item.title)}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-accent dark:bg-[#3399FF] transition-all group-hover:w-full"></span>
+              <span className="group-hover:opacity-80 transition">{t(item.title)}</span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-accentBlue dark:bg-accentBlueDark transition-all group-hover:w-full"></span>
             </a>
           ))}
           <LanguageSwitcher />
@@ -44,13 +43,13 @@ export default function Header({ theme, setTheme }) {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
         >
-          <span className="block w-7 h-0.5 bg-accent"></span>
-          <span className="block w-5 h-0.5 bg-accent"></span>
-          <span className="block w-7 h-0.5 bg-accent"></span>
+          <span className="block w-7 h-0.5 bg-accentBlue dark:bg-accentBlueDark"></span>
+          <span className="block w-5 h-0.5 bg-accentBlue dark:bg-accentBlueDark"></span>
+          <span className="block w-7 h-0.5 bg-accentBlue dark:bg-accentBlueDark"></span>
         </button>
         {/* Mobile menu drawer */}
         <motion.div
-          className={`fixed inset-0 z-50 bg-white dark:bg-[#121212] transition-all duration-300 ${
+          className={`fixed inset-0 z-50 bg-light dark:bg-dark transition-all duration-300 ${
             open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
           initial={false}
@@ -67,7 +66,7 @@ export default function Header({ theme, setTheme }) {
                 key={item.title}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="text-2xl font-semibold text-[#1A1A1A] dark:text-[#E0E0E0] hover:text-accent transition"
+                className="text-2xl font-mont font-bold text-accentBlue dark:text-accentBlueDark hover:opacity-80 transition"
               >
                 {t(item.title)}
               </a>
