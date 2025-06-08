@@ -1,3 +1,72 @@
+.hero-video-bg-section {
+  position: relative;
+  min-height: 60vh;
+  overflow: hidden;
+}
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  /* можно добавить фильтр для затемнения, если нужно */
+  /* filter: brightness(0.6) blur(1px); */
+}
+@media (max-width: 768px) {
+  .hero-bg-video {
+    width: 100vw;
+    height: 100%;
+    min-height: 60vh;
+    object-fit: cover;
+  }
+}
+
+.hero-cta-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 4px 18px 0 rgba(0,85,255,0.08);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition:
+    background 0.25s cubic-bezier(0.4,0,0.2,1),
+    color 0.25s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.25s cubic-bezier(0.4,0,0.2,1),
+    transform 0.22s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.hero-cta-btn {
+  background: #1A1A1A;
+  color: #fff;
+}
+
+.hero-cta-btn:hover,
+.hero-cta-btn:focus-visible {
+  background: #333;
+  color: #fff;
+  box-shadow: 0 6px 28px 0 rgba(0,85,255,0.16);
+}
+
+.dark .hero-cta-btn {
+  background: #fff;
+  color: #1A1A1A;
+}
+
+.dark .hero-cta-btn:hover,
+.dark .hero-cta-btn:focus-visible {
+  background: #F5F5F5;
+  color: #0055FF;
+  box-shadow: 0 6px 28px 0 rgba(51,153,255,0.25);
+}
+
 /* Оставляем ваш сдвиг правого блока */
 .hero-links-shift {
   margin-right: 60px;
@@ -15,3 +84,50 @@
   /* box-shadow: 0 0 20px 3px #3af0ff99; */
   /* transition уже есть через Tailwind */
 }
+
+/* CTA button general style */
+.hero-cta-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  box-shadow: 0 4px 18px 0 rgba(0,85,255,0.08);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition:
+    background 0.25s cubic-bezier(0.4,0,0.2,1),
+    color 0.25s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Светлая тема */
+.hero-cta-btn {
+  background: #1900b9e2;
+  color: #fff;
+}
+
+.hero-cta-btn:hover,
+.hero-cta-btn:focus-visible {
+  background: #000b5c;
+  color: #fff;
+  box-shadow: 0 6px 28px 0 rgba(0,85,255,0.16);
+}
+
+/* Темная тема */
+.dark .hero-cta-btn {
+  background: hsl(232, 94%, 94%);
+  color: #25399e;
+}
+
+.dark .hero-cta-btn:hover,
+.dark .hero-cta-btn:focus-visible {
+  background: #F5F5F5;
+  color: #0055FF;
+  box-shadow: 0 6px 28px 0 rgba(82, 168, 255, 0.25);
+}
+
+

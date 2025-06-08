@@ -16,12 +16,12 @@ h1, h2, h3, .font-mont {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.bg-light { background: #FFFFFF; }
-.bg-dark { background: #121212; }
-.text-dark { color: #1A1A1A; }
+.bg-light { background: #0167f642; }
+.bg-dark { background: #001bc920; }
+.text-dark { color: #000000; }
 .text-light { color: #E0E0E0; }
 .bg-cardLight { background: #F5F5F5; }
-.bg-cardDark { background: #1E1E1E; }
+.bg-cardDark { background: #1e1e1e83; }
 .text-accentBlue { color: #0055FF; }
 .bg-accentBlue { background: #0055FF; }
 .text-accentBlueDark { color: #3399FF; }

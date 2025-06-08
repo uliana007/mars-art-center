@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-primary text-white pt-14 pb-8 relative z-10"
+      className="bg-primary text-dark dark:text-white pt-14 pb-8 relative z-10"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between gap-8 border-b border-white/10 pb-8 mb-8">
@@ -17,10 +17,10 @@ export default function Footer() {
               <img src="/logo.svg" alt="Mars" className="h-8 w-8" />
               Центр Mars
             </a>
-            <div className="text-gray-200 mb-2">
+            <div className="text-gray-600 dark:text-gray-200 mb-2">
               <span>Digital-агентство полного цикла</span>
             </div>
-            <div className="text-gray-300 text-sm">
+            <div className="text-gray-500 dark:text-gray-300 text-sm">
               © {new Date().getFullYear()} Центр Mars
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Footer() {
               >
                 Отправить
               </button>
-              <span className="text-xs text-gray-400 mt-1">
+              <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                 Нажимая «Отправить», вы соглашаетесь с <a href="#" className="underline hover:text-accent">политикой конфиденциальности</a>.
               </span>
             </form>
@@ -98,7 +98,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center text-sm text-gray-400">
+        <div className="text-center text-sm text-gray-500 dark:text-gray-400">
           *Instagram принадлежит Meta Platforms Inc., деятельность которой запрещена в РФ
         </div>
       </div>
