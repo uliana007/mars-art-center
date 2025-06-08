@@ -1,19 +1,59 @@
 {
   "menu": {
-    "events": "Events",
-    "exhibitions": "Exhibitions",
+    "poster": "Poster",
+    "tickets": "Tickets",
+    "visitors": "For Visitors",
+    "media": "Media",
+    "partners": "Partners",
     "about": "About",
-    "contacts": "Contacts"
+    "photo_video": "Photo/Video"
   },
   "hero": {
-    "title": "M’ARS Center for Contemporary Art",
-    "subtitle": "Immersive exhibitions, VR shows, performances — next-gen art in central Moscow.",
-    "cta": "Buy tickets"
+    "title": "MARS Center for Contemporary Art",
+    "subtitle": "Immersive exhibitions, VR shows, performances — next-gen art in the heart of Moscow.",
+    "cta": "Buy ticket"
   },
-  "events": {
-    "title": "Current Events"
+  "about": {
+    "title": "About the Center",
+    "desc": "MARS is a center of contemporary art, uniting exhibitions, performances, and technology projects. We create space for experiments and new meanings in art."
   },
-  "event": {
-    "more": "More"
+  "projects": {
+    "title": "Our Projects",
+    "desc": "Exhibitions, VR-shows, performances, lectures, and workshops — we open new forms of interacting with contemporary art.",
+    "coming_soon": "New projects coming soon!"
+  },
+  "footer": {
+    "copyright": "© 2025 MARS. All rights reserved.",
+    "contacts": "Contacts",
+    "address": "Moscow, Pushkaryov per., 5",
+    "email": "info@marsartcenter.ru"
+  },
+  "poster": {
+    "title": "Poster",
+    "desc": "Current events, exhibitions, and shows of MARS Center. Stay tuned and book tickets online!"
+  },
+  "tickets": {
+    "title": "Tickets",
+    "desc": "Buy tickets for MARS Center exhibitions and events online. Fast, convenient, and safe."
+  },
+  "visitors": {
+    "title": "For Visitors",
+    "desc": "Everything you need to know before visiting the center: working hours, how to get there, visiting rules."
+  },
+  "media": {
+    "title": "Media",
+    "desc": "News, publications, videos, and photo reports about MARS Center events."
+  },
+  "partners": {
+    "title": "Partners",
+    "desc": "Cooperation with MARS Center: partnership programs, corporate events, sponsorship."
+  },
+  "photo_video": {
+    "title": "Photo/Video",
+    "desc": "Conditions and rules for photo and video shooting at the MARS Center."
+  },
+  "not_found": {
+    "title": "Page not found",
+    "desc": "Sorry, this page does not exist."
   }
 }
