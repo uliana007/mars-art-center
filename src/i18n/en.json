@@ -9,12 +9,9 @@
     "photo_video": "Photo/Video"
   },
   "hero": {
-    "title": "MARS CENTER FOR CONTEMPORARY ART",
-    "cta": "Buy ticket",
-    "poster_sub": "exhibitions, VR, performances",
-    "museum": "ABOUT THE MUSEUM",
-    "museum_sub": "art, technology",
-    "tickets_sub": "buy right now"
+    "title": "MARS Center for Contemporary Art",
+    "subtitle": "Immersive exhibitions, VR shows, performances — next-gen art in the heart of Moscow.",
+    "cta": "Buy ticket"
   },
   "about": {
     "title": "About the Center",
