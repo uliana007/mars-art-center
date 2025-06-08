@@ -55,5 +55,10 @@
   "not_found": {
     "title": "Page not found",
     "desc": "Sorry, this page does not exist."
+  },
+  "main": {
+    "afisha": { "title": "EVENTS", "subtitle": "exhibitions, VR, performances" },
+    "about": { "title": "ABOUT", "subtitle": "art, technology" },
+    "tickets": { "title": "TICKETS", "subtitle": "buy now" }
   }
 }
