@@ -24,9 +24,9 @@ module.exports = {
         blueGradientDark: "#3399FF",
       },
       fontFamily: {
-        sans: ['Open Sans', 'Arial', 'sans-serif'],
-        mont: ['Montserrat', 'Arial', 'sans-serif'],
-      },
+  sans: ['MyFont', 'Arial', 'sans-serif'],
+  mont: ['MyFont', 'Arial', 'sans-serif'], // если хочешь заменить Montserrat
+},
       borderRadius: {
         'badge': '7px',
         'card': '16px',

@@ -53,8 +53,8 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="mt-2 px-6 py-2 bg-accent text-white rounded-full font-semibold hover:bg-yellow-500 transition"
-              >
+                className="mt-2 px-6 py-2 bg-blue-600 text-white border-2 border-white rounded-full font-semibold hover:bg-blue-700 transition"
+>
                 Отправить
               </button>
               <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-center text-sm text-gray-500 dark:text-gray-400">
-          *Instagram принадлежит Meta Platforms Inc., деятельность которой запрещена в РФ
+          
         </div>
       </div>
     </footer>

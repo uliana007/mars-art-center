@@ -1,0 +1,1 @@
+Copyright (c) Michael Wallner, 2002. All rights reserved.

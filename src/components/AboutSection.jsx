@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/PosterCarousel.css"; // CSS для кастомной стилизации
+import "../styles/AboutSection.css";
+//импорт фотокарточек
+import slide2 from "../assets/image/slide-2.png";
+import artNight from "../assets/image/slide-3.png";
+import digitalFuture from "../assets/image/slide-5.png";
+import lightInstallation from "../assets/image/slide-6.png";
+import retroPhoto from "../assets/image/slide-7.png";
+import nightMusic from "../assets/image/slide-8.png";
 
-// Пример данных (замени на реальные, если нужно)
+// 6 карточек (примерные данные)
 const exhibitions = [
   {
     date: "18.06.2025",
     time: "19:00",
-    img: "/assets/exhibitions/om-chanting.jpg", // путь к картинке постера
+    img: slide2,
     title: {
       ru: "ОМ-ЧАНТИНГ: Внутренний Храм",
       en: "OM-CHANTING: Inner Temple"
@@ -21,7 +28,7 @@ const exhibitions = [
   {
     date: "24.06.2025",
     time: "20:00",
-    img: "/assets/exhibitions/art-night.jpg",
+    img: artNight,
     title: {
       ru: "Ночь Искусств",
       en: "Art Night"
@@ -34,7 +41,7 @@ const exhibitions = [
   {
     date: "30.06.2025",
     time: "18:00",
-    img: "/assets/exhibitions/digital-future.jpg",
+    img: digitalFuture,
     title: {
       ru: "Цифровое Будущее",
       en: "Digital Future"
@@ -43,13 +50,52 @@ const exhibitions = [
       ru: "VR-выставка, лекции, мастер-классы.",
       en: "VR exhibition, lectures, workshops."
     }
+  },
+  {
+    date: "05.07.2025",
+    time: "19:30",
+    img: lightInstallation,
+    title: {
+      ru: "Световые Инсталляции",
+      en: "Light Installations"
+    },
+    subtitle: {
+      ru: "Захватывающие световые шоу от современных художников.",
+      en: "Stunning light shows by modern artists."
+    }
+  },
+  {
+    date: "10.07.2025",
+    time: "17:00",
+    img: retroPhoto,
+    title: {
+      ru: "Ретро Фото",
+      en: "Retro Photo"
+    },
+    subtitle: {
+      ru: "Выставка редких фотографий прошлого века.",
+      en: "Exhibition of rare photos from the last century."
+    }
+  },
+  {
+    date: "15.07.2025",
+    time: "21:00",
+    img: nightMusic,
+    title: {
+      ru: "Ночные Мелодии",
+      en: "Night Melodies"
+    },
+    subtitle: {
+      ru: "Музыкальный перформанс под открытым небом.",
+      en: "Open-air musical performance."
+    }
   }
 ];
 
 export default function AboutSection() {
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState(0);
-  const [direction, setDirection] = useState(0); // 1 – next, -1 – prev
+  const [direction, setDirection] = useState(0);
 
   const showPrev = () => {
     setDirection(-1);
@@ -60,7 +106,7 @@ export default function AboutSection() {
     setActive((prev) => (prev === exhibitions.length - 1 ? 0 : prev + 1));
   };
 
-  // Для swipe на мобильном
+  // Swipe для мобильных
   let touchStartX = null;
   const handleTouchStart = (e) => {
     touchStartX = e.touches[0].clientX;
@@ -73,7 +119,6 @@ export default function AboutSection() {
     touchStartX = null;
   };
 
-  // Варианты анимации для плавного слайдера
   const variants = {
     enter: (dir) => ({
       x: dir > 0 ? 100 : -100,
@@ -100,6 +145,8 @@ export default function AboutSection() {
     })
   };
 
+  // Показываем стрелки только на md+ (скрываем на мобилках)
+  // Tailwind: hidden на <700px, block на md+
   return (
     <section className="py-16 bg-cardLight dark:bg-cardDark">
       <div className="container mx-auto px-4">
@@ -110,9 +157,13 @@ export default function AboutSection() {
           {t("about.desc")}
         </p>
 
-        {/* Карусель выставок */}
         <div className="ex-carousel-outer mt-12">
-          <button className="ex-nav ex-nav-left" onClick={showPrev} aria-label="Предыдущая выставка">
+          {/* стрелка влево (только md+) */}
+          <button
+            className="ex-nav ex-nav-left hidden md:flex"
+            onClick={showPrev}
+            aria-label="Предыдущая выставка"
+          >
             <span>&#8592;</span>
           </button>
           <div
@@ -159,7 +210,12 @@ export default function AboutSection() {
               </motion.div>
             </AnimatePresence>
           </div>
-          <button className="ex-nav ex-nav-right" onClick={showNext} aria-label="Следующая выставка">
+          {/* стрелка вправо (только md+) */}
+          <button
+            className="ex-nav ex-nav-right hidden md:flex"
+            onClick={showNext}
+            aria-label="Следующая выставка"
+          >
             <span>&#8594;</span>
           </button>
         </div>
@@ -181,7 +237,6 @@ export default function AboutSection() {
           ТОП недели
         </div>
       </div>
-      {/* These Image numbers: 1 apply to this user message and may be referenced by subsequent user messages. */}
     </section>
   );
 }

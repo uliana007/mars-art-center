@@ -1,62 +1,69 @@
-.hero-video-bg-section {
-  position: relative;
-  min-height: 60vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Новый адаптивный подход для видео */
-.hero-bg-video {
+.hero-bg-image {
   position: absolute;
   inset: 0;
-  width: 100vw;
-  height: 100vh;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: none;
-  max-height: none;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
-  background: #000;
-  transition: none;
+  user-select: none;
 }
 
-/* Мобильная и планшетная адаптация */
+.hero-video-bg-section {
+  min-height: 80vh;
+}
 @media (max-width: 768px) {
   .hero-video-bg-section {
-    min-height: 42vh;
-    height: 320px;
-  }
-  .hero-bg-video {
-    width: 100vw;
-    height: 100%;
-    min-height: 320px;
-    object-fit: cover;
-    object-position: center center;
+    min-height: 70vh;
   }
 }
 
-@media (max-width: 500px) {
-  .hero-video-bg-section {
-    min-height: 34vh;
-    height: 200px;
-  }
-  .hero-bg-video {
-    min-height: 200px;
-    min-width: 100vw;
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+/* Видео-адаптация (универсальный селектор для видео в hero) */
+.hero-video {
+  width: 320px;
+  height: 320px;
+  max-width: 95vw;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 30px 4px rgba(40,40,60,0.15);
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .hero-video {
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 90vw;
+    max-height: 220px;
   }
 }
 
+/* Animated squares (если используешь .animated-square) */
+.animated-square {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .animated-square {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
 
+/* Карусель адаптация (пример) */
+.carousel-slide {
+  width: 350px;
+}
+@media (max-width: 768px) {
+  .carousel-slide {
+    width: 95vw;
+    margin: 0 auto;
+  }
+}
 
-
+/* Кнопка и ссылки */
 .hero-cta-btn {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -74,93 +81,49 @@
   cursor: pointer;
   border: none;
   outline: none;
-}
-
-.hero-cta-btn {
-  background: #1A1A1A;
-  color: #fff;
-}
-
-.hero-cta-btn:hover,
-.hero-cta-btn:focus-visible {
-  background: #333;
-  color: #fff;
-  box-shadow: 0 6px 28px 0 rgba(0,85,255,0.16);
-}
-
-.dark .hero-cta-btn {
-  background: #fff;
-  color: #1A1A1A;
-}
-
-.dark .hero-cta-btn:hover,
-.dark .hero-cta-btn:focus-visible {
-  background: #F5F5F5;
-  color: #0055FF;
-  box-shadow: 0 6px 28px 0 rgba(51,153,255,0.25);
-}
-
-/* Оставляем ваш сдвиг правого блока */
-.hero-links-shift {
-  margin-right: 60px;
-}
-@media (max-width: 768px) {
-  .hero-links-shift {
-    margin-right: 0;
-  }
-}
-
-/* Дополнительная glow-анимация на hover, если нужна для ссылок */
-.hero-links-shift a:hover, .hero-links-shift a:focus-visible {
-  filter: drop-shadow(0 0 12px #44ffffcc);
-  /* или используйте box-shadow для ещё большего эффекта */
-  /* box-shadow: 0 0 20px 3px #3af0ff99; */
-  /* transition уже есть через Tailwind */
-}
-
-/* CTA button general style */
-.hero-cta-btn {
-  display: inline-block;
-  padding: 0.75rem 2rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  border-radius: 9999px;
-  box-shadow: 0 4px 18px 0 rgba(0,85,255,0.08);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition:
-    background 0.25s cubic-bezier(0.4,0,0.2,1),
-    color 0.25s cubic-bezier(0.4,0,0.2,1),
-    box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-/* Светлая тема */
-.hero-cta-btn {
   background: #1900b9e2;
   color: #fff;
 }
-
 .hero-cta-btn:hover,
 .hero-cta-btn:focus-visible {
   background: #000b5c;
   color: #fff;
   box-shadow: 0 6px 28px 0 rgba(0,85,255,0.16);
 }
-
-/* Темная тема */
+@media (max-width: 768px) {
+  .hero-cta-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
 .dark .hero-cta-btn {
   background: hsl(232, 94%, 94%);
   color: #25399e;
 }
-
 .dark .hero-cta-btn:hover,
 .dark .hero-cta-btn:focus-visible {
   background: #F5F5F5;
   color: #0055FF;
   box-shadow: 0 6px 28px 0 rgba(82, 168, 255, 0.25);
 }
+.hero-links-shift {
+  margin-right: 60px;
+}
+@media (max-width: 768px) {
+  .hero-links-shift {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+}
+.hero-links-shift a:hover, .hero-links-shift a:focus-visible {
+  filter: drop-shadow(0 0 12px #44ffffcc);
+}
 
+/* Пример для адаптива ссылок */
+@media (max-width: 768px) {
+  .hero-links-shift a {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 

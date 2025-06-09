@@ -24,7 +24,7 @@ export default function Header({ theme, setTheme }) {
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-bold text-xl uppercase tracking-tight text-accentBlue dark:text-accentBlueDark">
-          <img src="/logo.svg" alt="M’ARS" className="h-8 w-8" />
+          <img src="../assets/image/icon-mars.png" alt="M’ARS" className="h-8 w-8" />
           M’ARS
         </Link>
         {/* Desktop menu */}

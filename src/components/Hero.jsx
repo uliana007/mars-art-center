@@ -3,6 +3,7 @@ import AnimatedBackground from "./AnimatedBackground";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
+import heroImage from "../assets/image/foto.png";
 
 const linkVariants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
@@ -31,61 +32,42 @@ export default function Hero() {
   const { t } = useTranslation();
   return (
     <>
-     <section className="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden hero-video-bg-section">
-  {/* Фоновое видео */}
-  <video
-    className="hero-bg-video"
-    src="../assets/video/videoplayback.mp4"
-    autoPlay
-    muted
-    loop
-    playsInline
-  />
-  <div
-    style={{
-      color: "red",
-      fontWeight: "bold",
-      fontSize: 28,
-      letterSpacing: 2,
-      marginBottom: 16,
-      zIndex: 2,
-      position: "relative"
-    }}
-  >
-    ПРОВЕРОЧНЫЙ ТЕКСТ: ЭТОТ ТЕКСТ ДОЛЖЕН БЫТЬ ВИДЕН
-  </div>
-  <AnimatedBackground />
-  <motion.h1
-  className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.2, duration: 0.8 }}
-  style={{ position: "relative", zIndex: 2 }}
->
-  {t("hero.title")}
-</motion.h1>
-<motion.p
-  className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto"
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.4, duration: 0.8 }}
-  style={{ position: "relative", zIndex: 2 }}
->
-  {t("hero.subtitle")}
-</motion.p>
-  <motion.a
-    href="#events"
-    className="hero-cta-btn"
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.6, duration: 0.7 }}
-    style={{ position: "relative", zIndex: 2 }}
-  >
-    {t("hero.cta")}
-  </motion.a>
-</section>
+      <section className="relative hero-video-bg-section flex flex-col justify-center items-center text-center overflow-hidden">
+        {/* Фоновое фото */}
+        <img src={heroImage} alt="Фоновое изображение" className="hero-bg-image" />
+        <AnimatedBackground />
 
- {/* --- Новый блок "визитка + ссылки" --- */}
+        <motion.h1
+          className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          style={{ position: "relative", zIndex: 2 }}
+        >
+          {t("hero.title")}
+        </motion.h1>
+        <motion.p
+          className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          style={{ position: "relative", zIndex: 2 }}
+        >
+          {t("hero.subtitle")}
+        </motion.p>
+        <motion.a
+          href="#events"
+          className="hero-cta-btn"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+          style={{ position: "relative", zIndex: 2 }}
+        >
+          {t("hero.cta")}
+        </motion.a>
+      </section>
+
+      {/* --- Новый блок "визитка + ссылки" --- */}
       <section className="w-full flex flex-col md:flex-row justify-center items-center gap-8 my-16">
         {/* Левая часть: Видео с анимацией */}
         <div className="flex-1 flex justify-center items-center">
@@ -103,7 +85,7 @@ export default function Hero() {
               loop
               muted
               playsInline
-              className="w-80 h-80 object-cover rounded-[40px] border-4 border-white shadow-xl relative z-10"
+              className="hero-video"
               style={{
                 boxShadow: "0 0 30px 4px rgba(40,40,60,0.15)"
               }}
