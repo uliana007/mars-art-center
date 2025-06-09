@@ -11,7 +11,12 @@
   "hero": {
     "title": "MARS Center for Contemporary Art",
     "subtitle": "Immersive exhibitions, VR shows, performances — next-gen art in the heart of Moscow.",
-    "cta": "Buy ticket"
+    "cta": "Buy ticket",
+  "links": {
+    "poster_subtitle": "exhibitions, VR, performances",
+    "about_subtitle": "art, technology",
+    "tickets_subtitle": "buy right now"
+  }
   },
   "about": {
     "title": "About the Center",
@@ -55,5 +60,10 @@
   "not_found": {
     "title": "Page not found",
     "desc": "Sorry, this page does not exist."
-  }
+  },
+"heroLinks": [
+  { "href": "#poster", "title": "POSTER", "subtitle": "exhibitions, VR, performances" },
+  { "href": "#about", "title": "ABOUT", "subtitle": "art, technology" },
+  { "href": "#tickets", "title": "TICKETS", "subtitle": "buy now" }
+]
 }

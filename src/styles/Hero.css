@@ -2,27 +2,60 @@
   position: relative;
   min-height: 60vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Новый адаптивный подход для видео */
 .hero-bg-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: cover;
   z-index: 1;
   pointer-events: none;
-  /* можно добавить фильтр для затемнения, если нужно */
-  /* filter: brightness(0.6) blur(1px); */
+  background: #000;
+  transition: none;
 }
+
+/* Мобильная и планшетная адаптация */
 @media (max-width: 768px) {
+  .hero-video-bg-section {
+    min-height: 42vh;
+    height: 320px;
+  }
   .hero-bg-video {
     width: 100vw;
     height: 100%;
-    min-height: 60vh;
+    min-height: 320px;
     object-fit: cover;
+    object-position: center center;
   }
 }
+
+@media (max-width: 500px) {
+  .hero-video-bg-section {
+    min-height: 34vh;
+    height: 200px;
+  }
+  .hero-bg-video {
+    min-height: 200px;
+    min-width: 100vw;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+
 
 .hero-cta-btn {
   display: inline-block;

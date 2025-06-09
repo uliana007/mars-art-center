@@ -31,7 +31,7 @@ export default function Hero() {
   const { t } = useTranslation();
   return (
     <>
-      <section className="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden hero-video-bg-section">
+     <section className="relative min-h-[60vh] flex flex-col justify-center items-center text-center overflow-hidden hero-video-bg-section">
   {/* Фоновое видео */}
   <video
     className="hero-bg-video"
@@ -56,23 +56,23 @@ export default function Hero() {
   </div>
   <AnimatedBackground />
   <motion.h1
-    className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-[#1A1A1A] dark:text-[#E0E0E0]"
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.2, duration: 0.8 }}
-    style={{ position: "relative", zIndex: 2 }}
-  >
-    {t("hero.title")}
-  </motion.h1>
-  <motion.p
-    className="text-lg md:text-xl text-[#555] dark:text-[#BBB] mb-8 max-w-2xl mx-auto"
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.4, duration: 0.8 }}
-    style={{ position: "relative", zIndex: 2 }}
-  >
-    {t("hero.subtitle")}
-  </motion.p>
+  className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.8 }}
+  style={{ position: "relative", zIndex: 2 }}
+>
+  {t("hero.title")}
+</motion.h1>
+<motion.p
+  className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4, duration: 0.8 }}
+  style={{ position: "relative", zIndex: 2 }}
+>
+  {t("hero.subtitle")}
+</motion.p>
   <motion.a
     href="#events"
     className="hero-cta-btn"
@@ -85,7 +85,7 @@ export default function Hero() {
   </motion.a>
 </section>
 
-      {/* --- Новый блок "визитка + ссылки" --- */}
+ {/* --- Новый блок "визитка + ссылки" --- */}
       <section className="w-full flex flex-col md:flex-row justify-center items-center gap-8 my-16">
         {/* Левая часть: Видео с анимацией */}
         <div className="flex-1 flex justify-center items-center">
@@ -119,18 +119,18 @@ export default function Hero() {
           {[
             {
               href: "#poster",
-              title: "АФИША",
-              subtitle: "выставки, VR, перформансы"
+              title: t("menu.poster"),
+              subtitle: t("hero.links.poster_subtitle")
             },
             {
               href: "#about",
-              title: "О МУЗЕЕ",
-              subtitle: "искусство, технологии"
+              title: t("menu.about"),
+              subtitle: t("hero.links.about_subtitle")
             },
             {
               href: "#tickets",
-              title: "БИЛЕТЫ",
-              subtitle: "купи прямо сейчас"
+              title: t("menu.tickets"),
+              subtitle: t("hero.links.tickets_subtitle")
             }
           ].map((item, i) => (
             <motion.a
