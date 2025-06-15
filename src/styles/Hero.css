@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../src/assets/fonts/Digiface/Digiface (Rus by MarkStarikov2014) Regular.ttf') format('woff2'),
+       url('../src/assets/fonts/Digiface/Digiface (Rus by MarkStarikov2014) Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-myfont {
+  font-family: 'MyFont', sans-serif;
+}
+
 .hero-bg-image {
   position: absolute;
   inset: 0;

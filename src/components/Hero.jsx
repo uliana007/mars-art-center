@@ -97,43 +97,46 @@ export default function Hero() {
           </motion.div>
         </div>
         {/* Правая часть: ссылки */}
-        <div className="flex-1 flex flex-col gap-8 items-center md:items-end w-full max-w-md hero-links-shift">
-          {[
-            {
-              href: "#poster",
-              title: t("menu.poster"),
-              subtitle: t("hero.links.poster_subtitle")
-            },
-            {
-              href: "#about",
-              title: t("menu.about"),
-              subtitle: t("hero.links.about_subtitle")
-            },
-            {
-              href: "#tickets",
-              title: t("menu.tickets"),
-              subtitle: t("hero.links.tickets_subtitle")
-            }
-          ].map((item, i) => (
-            <motion.a
-              key={item.href}
-              href={item.href}
-              className="w-full border-2 border-white hover:border-accentBlue transition shadow-lg rounded-lg px-8 py-6 bg-black/70 hover:bg-accentBlue/10 text-white flex flex-col group"
-              custom={i}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-              variants={linkVariants}
-            >
-              <span className="text-2xl md:text-3xl font-mont uppercase tracking-wide group-hover:text-accentBlue transition">
-                {item.title}
-              </span>
-              <span className="text-base mt-2 opacity-80">
-                {item.subtitle}
-              </span>
-            </motion.a>
-          ))}
-        </div>
+        {/* Правая часть: ссылки */}
+<div className="flex-1 flex flex-col gap-8 items-center md:items-end w-full max-w-md hero-links-shift">
+  {[
+    {
+      href: "#tickets",
+      title: t("menu.tickets"),
+      subtitle: t("hero.links.tickets_subtitle")
+    },
+    {
+      href: "#about",
+      title: t("menu.about"),
+      subtitle: t("hero.links.about_subtitle")
+    },
+    {
+      href: "#contacts",
+      title: t("menu.contacts"),
+      subtitle: t("footer.contacts")
+    }
+  ].map((item, i) => (
+    <motion.a
+      key={item.href}
+      href={item.href}
+      className="w-full border-2 border-white hover:border-accentBlue transition shadow-lg rounded-lg px-8 py-6 bg-black/70 hover:bg-accentBlue/10 text-white flex flex-col group"
+      custom={i}
+      initial="hidden"
+      animate="visible"
+      whileHover="hover"
+      variants={linkVariants}
+    >
+      <span className="text-2xl md:text-3xl font-myfont uppercase tracking-wide group-hover:text-accentBlue transition">
+        {item.title}
+      </span>
+      <span className="text-base mt-2 opacity-80 font-myfont">
+        {item.subtitle}
+      </span>
+    </motion.a>
+  ))}
+</div>
+
+         
       </section>
       {/* --- конец нового блока --- */}
     </>

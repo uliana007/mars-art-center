@@ -17,22 +17,15 @@ export default function Home() {
         </p>
         <a
           href="/tickets"
-          className="inline-block px-8 py-3 bg-accentBlue dark:bg-accentBlueDark text-white text-lg font-semibold rounded-btn shadow-btn hover:bg-hoverBlue dark:hover:bg-hoverBlueDark transition-all uppercase"
+          className="inline-block px-8 py-3 bg-accentBlue dark:bg-accentBlueDark
+          text-white text-lg font-semibold rounded-btn shadow-btn hover:bg-hoverBlue
+          dark:hover:bg-hoverBlueDark transition-all uppercase"
         >
           {t("hero.cta")}
         </a>
       </section>
 
-      {/* Проверочный текст ДО секции */}
-      <div style={{
-        textAlign: "center",
-        fontWeight: "bold",
-        fontSize: 32,
-        color: "red",
-        margin: "40px 0"
-      }}>
-        ПРОВЕРКА: ЭТОТ ТЕКСТ ДОЛЖЕН БЫТЬ ВИДЕН НА ГЛАВНОЙ СТРАНИЦЕ
-      </div>
+ 
 
       <AboutSection />
       <ProjectsSection />

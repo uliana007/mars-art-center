@@ -9,14 +9,12 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 
 // Новые страницы
-import PosterPage from "./Pages/PosterPage";
-import TicketsPage from "./Pages/TicketsPage";
-import VisitorsPage from "./Pages/VisitorsPage";
-import MediaPage from "./Pages/MediaPage";
-import PartnersPage from "./Pages/PartnersPage";
-import AboutPage from "./Pages/AboutPage";
-import PhotoVideoPage from "./Pages/PhotoVideoPage";
-import NotFoundPage from "./Pages/NotFoundPage";
+import Home from "./Pages/HomePage";
+import TicketsPage from "./pages/TicketsPage";
+import VisitorsPage from "./pages/VisitorsPage";
+import MediaPage from "./pages/MediaPage";
+import AboutPage from "./pages/AboutPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -48,13 +46,11 @@ export default function App() {
                 <ProjectsSection />
               </>
             } />
-            <Route path="/poster" element={<PosterPage />} />
+            <Route path="/main" element={<Home />} />
             <Route path="/tickets" element={<TicketsPage />} />
             <Route path="/visitors" element={<VisitorsPage />} />
             <Route path="/media" element={<MediaPage />} />
-            <Route path="/partners" element={<PartnersPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/photo-video" element={<PhotoVideoPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

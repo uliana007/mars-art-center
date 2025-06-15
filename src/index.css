@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../src/assets/fonts/Digiface/Digiface (Rus by MarkStarikov2014) Regular.ttf') format('woff2'),
+       url('../src/assets/fonts/Digiface/Digiface (Rus by MarkStarikov2014) Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   background: #fff;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .dark body {
-  background: #121212;
+  background: #000339;
   color: #E0E0E0;
 }
 
@@ -31,3 +41,12 @@ h1, h2, h3, .font-mont {
 
 .animate-spin-slow {
   animation: spin 18s linear infinite;}
+
+:root {
+  --menu-bg-color: rgba(0, 34, 81, 0.875); /* светлая тема — светло-синий с прозрачностью */
+}
+
+
+.dark {
+  --menu-bg-color: rgba(87, 89, 99, 0.879); /* тёмная тема — другой синий, более мягкий */
+}

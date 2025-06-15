@@ -1,12 +1,13 @@
 {
   "menu": {
-    "poster": "Poster",
+    "poster": "Main",
     "tickets": "Tickets",
     "visitors": "For Visitors",
     "media": "Media",
     "partners": "Partners",
     "about": "About",
-    "photo_video": "Photo/Video"
+    "photo_video": "Photo/Video",
+    "contacts": "Contacts" 
   },
   "hero": {
     "title": "MARS Center for Contemporary Art",

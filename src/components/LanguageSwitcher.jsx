@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
             : "bg-transparent text-accentBlue hover:bg-accentBlue/10"}
         `}
       >
-        <span role="img" aria-label="English">🇬🇧</span> EN
+        <span role="img" aria-label="English">en</span> EN
       </button>
     </div>
   );

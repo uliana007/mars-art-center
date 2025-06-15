@@ -1,11 +1,32 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import iconMars from "../assets/image/icon-mars.png";
 
 export default function Footer() {
+  const { t, i18n } = useTranslation();
+
+  // Пуш-уведомление
+  function showPushNotification(message) {
+    if ("Notification" in window) {
+      if (Notification.permission === "granted") {
+        new Notification(message);
+      } else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(permission => {
+          if (permission === "granted") {
+            new Notification(message);
+          }
+        });
+      }
+    }
+  }
+
   return (
     <footer
       id="footer"
       className="bg-primary text-dark dark:text-white pt-14 pb-8 relative z-10"
     >
+      {/* Белая разделяющая полоса сверху */}
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-white" style={{zIndex: 20}} />
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between gap-8 border-b border-white/10 pb-8 mb-8">
           {/* Контакты */}
@@ -14,68 +35,109 @@ export default function Footer() {
               href="/"
               className="flex items-center gap-2 font-bold text-xl uppercase tracking-widest mb-3"
             >
-              <img src="/logo.svg" alt="Mars" className="h-8 w-8" />
-              Центр Mars
+              <img
+                src={iconMars}
+                alt="M’ARS"
+                className="h-12 w-12 z-30 relative transition-all duration-300 border-2 border-black"
+              />
+              {i18n.language === "ru" ? "Центр Mars" : "Mars Center"}
             </a>
             <div className="text-gray-600 dark:text-gray-200 mb-2">
-              <span>Digital-агентство полного цикла</span>
+              <span>
+                {i18n.language === "ru"
+                  ? "Digital-агентство полного цикла"
+                  : "Full cycle digital agency"}
+              </span>
             </div>
             <div className="text-gray-500 dark:text-gray-300 text-sm">
-              © {new Date().getFullYear()} Центр Mars
+              {t("footer.copyright")}
             </div>
           </div>
           {/* Форма обратной связи */}
           <div className="w-full md:w-auto max-w-md">
-            <div className="font-semibold mb-3">Оставьте заявку</div>
+            <div className="font-semibold mb-3">
+              {i18n.language === "ru" ? "Оставьте заявку на ивент/выставку" : "Leave a request"}
+            </div>
             <form
               className="flex flex-col gap-3"
               onSubmit={e => {
                 e.preventDefault();
-                alert("Спасибо за заявку! Мы свяжемся с вами.");
+                const message =
+                  i18n.language === "ru"
+                    ? "Спасибо за заявку! Мы свяжемся с вами."
+                    : "Thank you for your request! We'll contact you soon.";
+                alert(message);
+                showPushNotification(message);
               }}
             >
               <input
                 type="text"
-                placeholder="Ваше имя"
-                className="rounded px-4 py-2 bg-white text-primary placeholder-gray-400 outline-accent"
+                placeholder={i18n.language === "ru" ? "Ваше имя" : "Your name"}
+                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
                 required
+                style={{
+                  backgroundColor: "white",
+                  color: "#000"
+                }}
               />
               <input
                 type="tel"
-                placeholder="Телефон"
-                className="rounded px-4 py-2 bg-white text-primary placeholder-gray-400 outline-accent"
+                placeholder={i18n.language === "ru" ? "Телефон" : "Phone"}
+                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
                 required
+                style={{
+                  backgroundColor: "white",
+                  color: "#000"
+                }}
               />
               <input
                 type="email"
-                placeholder="E-mail (необязательно)"
-                className="rounded px-4 py-2 bg-white text-primary placeholder-gray-400 outline-accent"
+                placeholder={
+                  i18n.language === "ru"
+                    ? "E-mail (необязательно)"
+                    : "E-mail (optional)"
+                }
+                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
+                style={{
+                  backgroundColor: "white",
+                  color: "#000"
+                }}
               />
               <button
                 type="submit"
                 className="mt-2 px-6 py-2 bg-blue-600 text-white border-2 border-white rounded-full font-semibold hover:bg-blue-700 transition"
->
-                Отправить
+              >
+                {i18n.language === "ru" ? "Отправить" : "Send"}
               </button>
               <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                Нажимая «Отправить», вы соглашаетесь с <a href="#" className="underline hover:text-accent">политикой конфиденциальности</a>.
+                {i18n.language === "ru"
+                  ? (
+                    <>Нажимая «Отправить», вы соглашаетесь с <a href="#" className="underline hover:text-accent">политикой конфиденциальности</a>.</>
+                  )
+                  : (
+                    <>By clicking "Send", you agree with our <a href="#" className="underline hover:text-accent">privacy policy</a>.</>
+                  )}
               </span>
             </form>
           </div>
           {/* Контактная информация */}
           <div>
-            <div className="font-semibold mb-3">Контакты</div>
+            <div className="font-semibold mb-3">{t("footer.contacts")}</div>
             <div className="mb-2 flex items-center gap-2">
               <svg className="w-5 h-5 text-accent inline" fill="none" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h2.28a2 2 0 011.7.95l1.54 2.6a2 2 0 01-.24 2.32l-1.27 1.53a16.06 16.06 0 006.58 6.58l1.53-1.27a2 2 0 012.32-.24l2.6 1.54a2 2 0 01.95 1.7V19a2 2 0 01-2 2h-1C8.06 21 3 15.94 3 9V5z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/></svg>
-              <a href="tel:+79991234567" className="hover:underline">+7 999 123-45-67</a>
+              <a href="tel:+79991234567" className="hover:underline">
+                +7 999 123-45-67
+              </a>
             </div>
             <div className="mb-2 flex items-center gap-2">
               <svg className="w-5 h-5 text-accent inline" fill="none" viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/></svg>
-              <a href="mailto:info@centermars.ru" className="hover:underline">info@centermars.ru</a>
+              <a href="mailto:info@centermars.ru" className="hover:underline">
+                {t("footer.email")}
+              </a>
             </div>
             <div className="mb-2 flex items-center gap-2">
               <svg className="w-5 h-5 text-accent inline" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/><path d="M16 8c0 1.656-1.343 3-3 3-1.656 0-3-1.344-3-3s1.344-3 3-3c1.657 0 3 1.344 3 3zm-3 3v5"></path></svg>
-              <span>г. Москва</span>
+              <span>{t("footer.address")}</span>
             </div>
             <div className="flex gap-3 mt-3">
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-accent" aria-label="VK">
@@ -98,9 +160,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center text-sm text-gray-500 dark:text-gray-400">
-          
-        </div>
+        {/* Можно добавить дополнительную строку, если потребуется */}
       </div>
     </footer>
   );

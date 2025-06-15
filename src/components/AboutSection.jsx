@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
@@ -13,6 +14,84 @@ import nightMusic from "../assets/image/slide-8.png";
 // 6 карточек (примерные данные)
 const exhibitions = [
   {
+    date: "18.06.2025",
+    time: "19:00",
+    img: slide2,
+    title: {
+      ru: "ОМ-ЧАНТИНГ: Внутренний Храм",
+      en: "OM-CHANTING: Inner Temple"
+    },
+    subtitle: {
+      ru: "Практика и живой концерт-медитация. Билеты в продаже!",
+      en: "Practice and live concert-meditation. Tickets available!"
+    }
+  },
+  {
+    date: "24.06.2025",
+    time: "20:00",
+    img: artNight,
+    title: {
+      ru: "Ночь Искусств",
+      en: "Art Night"
+    },
+    subtitle: {
+      ru: "Экспериментальная выставка и перформанс.",
+      en: "Experimental exhibition and performance."
+    }
+  },
+  {
+    date: "30.06.2025",
+    time: "18:00",
+    img: digitalFuture,
+    title: {
+      ru: "Цифровое Будущее",
+      en: "Digital Future"
+    },
+    subtitle: {
+      ru: "VR-выставка, лекции, мастер-классы.",
+      en: "VR exhibition, lectures, workshops."
+    }
+  },
+  {
+    date: "05.07.2025",
+    time: "19:30",
+    img: lightInstallation,
+    title: {
+      ru: "Световые Инсталляции",
+      en: "Light Installations"
+    },
+    subtitle: {
+      ru: "Захватывающие световые шоу от современных художников.",
+      en: "Stunning light shows by modern artists."
+    }
+  },
+  {
+    date: "10.07.2025",
+    time: "17:00",
+    img: retroPhoto,
+    title: {
+      ru: "Ретро Фото",
+      en: "Retro Photo"
+    },
+    subtitle: {
+      ru: "Выставка редких фотографий прошлого века.",
+      en: "Exhibition of rare photos from the last century."
+    }
+  },
+  {
+    date: "15.07.2025",
+    time: "21:00",
+    img: nightMusic,
+    title: {
+      ru: "Ночные Мелодии",
+      en: "Night Melodies"
+    },
+    subtitle: {
+      ru: "Музыкальный перформанс под открытым небом.",
+      en: "Open-air musical performance."
+    }
+  },
+   {
     date: "18.06.2025",
     time: "19:00",
     img: slide2,

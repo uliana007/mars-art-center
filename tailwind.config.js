@@ -6,27 +6,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        // Основная палитра
-        lightBg: "#FFFFFF",
-        darkBg: "#121212",
-        lightText: "#1A1A1A",
-        darkText: "#E0E0E0",
-        accentBlue: "#0055FF",
-        accentBlueDark: "#3399FF",
-        cardLight: "#F5F5F5",
-        cardDark: "#1E1E1E",
-        hoverBlue: "#0048CC",
-        hoverBlueDark: "#2288EE",
-        // Дополнительно для градиентов и баджей
-        violet: "#7B2FF2",
-        blueGradient: "#0055FF",
-        blueGradientDark: "#3399FF",
-      },
-      fontFamily: {
-  sans: ['MyFont', 'Arial', 'sans-serif'],
-  mont: ['MyFont', 'Arial', 'sans-serif'], // если хочешь заменить Montserrat
-},
+  colors: {
+    // Основная палитра
+    lightBg: "#FFFFFF",
+    darkBg: "#121212",
+    lightText: "#1A1A1A",
+    darkText: "#E0E0E0",
+    accentBlue: "#0055FF",
+    accentBlueDark: "#3399FF",
+    cardLight: "#F5F5F5",
+    cardDark: "#1E1E1E",
+    hoverBlue: "#0048CC",
+    hoverBlueDark: "#2288EE",
+    // Дополнительно для градиентов и баджей
+    violet: "#7B2FF2",
+    blueGradient: "#0055FF",
+    blueGradientDark: "#3399FF",
+  },
+  fontFamily: {
+    myfont: ['MyFont', 'sans-serif'],
+  },
       borderRadius: {
         'badge': '7px',
         'card': '16px',
