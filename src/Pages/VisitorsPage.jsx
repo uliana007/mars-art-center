@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TicketsPage from "../pages/TicketsPage";
+import TicketsPage from "../Pages/TicketsPage";
 
 export default function VictorsPage() {
   return (

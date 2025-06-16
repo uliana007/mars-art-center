@@ -14,6 +14,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@tailwindcss/line-clamp": "^0.4.4",
+    "firebase": "^11.9.1",
+    "firebase-admin": "^13.4.0",
     "framer-motion": "^12.16.0",
     "i18next": "^25.2.1",
     "i18next-http-backend": "^3.0.2",
@@ -37,5 +39,10 @@
     "postcss": "^8.5.4",
     "tailwindcss": "^3.4.17",
     "vite": "^6.3.5"
-  }
+  },
+  "description": "Спасибо, лог подтвердил: `npx` не может найти исполняемый файл у TailwindCSS, потому что установлен **TailwindCSS v4.1.8**, а **эта версия — ESM-only**, и **у неё нет bin-файла, который может запустить `npx`** напрямую.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

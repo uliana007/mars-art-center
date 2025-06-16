@@ -184,3 +184,14 @@ git branch -M main
 
 # 7. Отправь на GitHub
 git push -u origin main
+
+
+
+
+
+----------------------------------------------------------------------------------------------
+ЗАГРУЗКА СТАТЕЙ В FAREBASE ИЗ .JSON
+
+PS D:\ДИПЛОМ\react-mars\my-mars-app\src\db_firebase> cd db_firebase             
+
+node importToFirestore.cjs 
