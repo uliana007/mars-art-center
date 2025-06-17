@@ -19,6 +19,7 @@ import calendarIconDark from '../assets/image/event-black.png';   // для те
 import { db } from "../db_firebase/firebase"; // путь поправь под себя
 import { collection, getDocs } from "firebase/firestore";
 
+const isDarkTheme = /* логика определения темы, например из i18n, context или useState */;
 
 // Картинки по id выставки (id в базе - строки!)
 const imageMap = {
@@ -45,7 +46,7 @@ const TIMEPAD_EVENT_URL = "https://tssi-mars.timepad.ru/event/3412875/";
 export default function TicketsPage() {
   const { i18n } = useTranslation();
   const lang = i18n.language === "en" ? "en" : "ru";
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   // Состояния для выставок
   const [exhibitions, setExhibitions] = useState([]);
   const [types, setTypes] = useState([]);
@@ -328,7 +329,7 @@ export default function TicketsPage() {
     </span>
   )}
   {/* Иконка календаря - видна только на мобильных (до sm), размер больше (w-6 h-6) */}
-  <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
+  <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
     <img
       src={isDarkTheme ? calendarIconDark : calendarIconLight}
       alt="Calendar"

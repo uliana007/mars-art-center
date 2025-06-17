@@ -19,7 +19,6 @@ import calendarIconDark from '../assets/image/event-black.png';   // для те
 import { db } from "../db_firebase/firebase"; // путь поправь под себя
 import { collection, getDocs } from "firebase/firestore";
 
-
 // Картинки по id выставки (id в базе - строки!)
 const imageMap = {
   "1": slide2,
@@ -45,7 +44,7 @@ const TIMEPAD_EVENT_URL = "https://tssi-mars.timepad.ru/event/3412875/";
 export default function TicketsPage() {
   const { i18n } = useTranslation();
   const lang = i18n.language === "en" ? "en" : "ru";
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   // Состояния для выставок
   const [exhibitions, setExhibitions] = useState([]);
   const [types, setTypes] = useState([]);
@@ -305,11 +304,11 @@ export default function TicketsPage() {
           ))}
         </select>
         {/* Даты */}
-       <div className="relative w-full sm:w-40">
+        <div className="relative w-full sm:w-40">
   <input
     type="date"
     id="date-from"
-    className="bg-[#e9eef7] dark:bg-[#353535] text-[#222] dark:text-white px-4 py-2 rounded w-full peer appearance-none border border-black pr-12"
+    className="bg-[#e9eef7] dark:bg-[#353535] text-[#222] dark:text-white px-4 py-2 rounded w-full peer appearance-none border border-black pr-10"
     value={draftDateRange.from}
     onChange={e => setDraftDateRange(r => ({ ...r, from: e.target.value }))}
     onFocus={() => setFromFocused(true)}
@@ -327,13 +326,9 @@ export default function TicketsPage() {
       {texts.placeholderDate}
     </span>
   )}
-  {/* Иконка календаря - видна только на мобильных (до sm), размер больше (w-6 h-6) */}
-  <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
-    <img
-      src={isDarkTheme ? calendarIconDark : calendarIconLight}
-      alt="Calendar"
-      className="w-6 h-6"
-    />
+  {/* Иконка календаря - видна только на мобильных (до sm) */}
+  <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
+    <img src={calendarIcon} alt="Calendar" className="w-5 h-5" />
   </div>
 </div>
         {/* Кнопки действий */}

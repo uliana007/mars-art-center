@@ -328,7 +328,7 @@ export default function TicketsPage() {
     </span>
   )}
   {/* Иконка календаря - видна только на мобильных (до sm), размер больше (w-6 h-6) */}
-  <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
+  <div className="absolute right-7 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
     <img
       src={isDarkTheme ? calendarIconDark : calendarIconLight}
       alt="Calendar"
