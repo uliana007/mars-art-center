@@ -13,7 +13,7 @@ import slide9 from '../assets/image/slode-9.png';
 import slide10 from '../assets/image/slide-10.png';
 import slide11 from '../assets/image/slide-11.png';
 import calendarIconDark from '../assets/image/event-white.png'; // для светлой темы
-import calendarIconLight from '../assets/image/event-black.png';   // для темной темы
+import calendarIconWhite from '../assets/image/event-black.png';   // для темной темы
 
 // FIREBASE
 import { db } from "../db_firebase/firebase"; // путь поправь под себя
