@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import iconMars from "../assets/image/icon-mars.png";
+import FeedbackForm from "./FeedbackForm";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -54,72 +55,7 @@ export default function Footer() {
             </div>
           </div>
           {/* Форма обратной связи */}
-          <div className="w-full md:w-auto max-w-md">
-            <div className="font-semibold mb-3">
-              {i18n.language === "ru" ? "Оставьте заявку на ивент/выставку" : "Leave a request"}
-            </div>
-            <form
-              className="flex flex-col gap-3"
-              onSubmit={e => {
-                e.preventDefault();
-                const message =
-                  i18n.language === "ru"
-                    ? "Спасибо за заявку! Мы свяжемся с вами."
-                    : "Thank you for your request! We'll contact you soon.";
-                alert(message);
-                showPushNotification(message);
-              }}
-            >
-              <input
-                type="text"
-                placeholder={i18n.language === "ru" ? "Ваше имя" : "Your name"}
-                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
-                required
-                style={{
-                  backgroundColor: "white",
-                  color: "#000"
-                }}
-              />
-              <input
-                type="tel"
-                placeholder={i18n.language === "ru" ? "Телефон" : "Phone"}
-                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
-                required
-                style={{
-                  backgroundColor: "white",
-                  color: "#000"
-                }}
-              />
-              <input
-                type="email"
-                placeholder={
-                  i18n.language === "ru"
-                    ? "E-mail (необязательно)"
-                    : "E-mail (optional)"
-                }
-                className="rounded w-full h-12 px-4 py-2 bg-white text-black placeholder-gray-400 outline-accent border border-gray-300"
-                style={{
-                  backgroundColor: "white",
-                  color: "#000"
-                }}
-              />
-              <button
-                type="submit"
-                className="mt-2 px-6 py-2 bg-blue-600 text-white border-2 border-white rounded-full font-semibold hover:bg-blue-700 transition"
-              >
-                {i18n.language === "ru" ? "Отправить" : "Send"}
-              </button>
-              <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                {i18n.language === "ru"
-                  ? (
-                    <>Нажимая «Отправить», вы соглашаетесь с <a href="#" className="underline hover:text-accent">политикой конфиденциальности</a>.</>
-                  )
-                  : (
-                    <>By clicking "Send", you agree with our <a href="#" className="underline hover:text-accent">privacy policy</a>.</>
-                  )}
-              </span>
-            </form>
-          </div>
+          <FeedbackForm showPushNotification={showPushNotification} />
           {/* Контактная информация */}
           <div>
             <div className="font-semibold mb-3">{t("footer.contacts")}</div>

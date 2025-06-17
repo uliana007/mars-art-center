@@ -1,0 +1,26 @@
+.poster-carousel-bg {
+  background: #2D37FF; /* насыщенный синий для светлой темы */
+  transition: background 0.3s;
+  padding-bottom: 42px;
+}
+/* Для темной темы */
+@media (prefers-color-scheme: dark) {
+  .poster-carousel-bg {
+    background: #151a3c; /* тёмно-синий для dark */
+  }
+}
+
+/* Если используете Tailwind dark: класс — добавьте этот блок, если не через prefers-color-scheme */
+.dark .poster-carousel-bg {
+  background: #151a3c !important;
+}
+
+/* Стили для текста ТОП недели, если нужно усилить акцент */
+.carousel-top-week {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.09em;
+}

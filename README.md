@@ -187,7 +187,16 @@ git push -u origin main
 
 
 
+В следующий раз (обновление сайта)
+Если надо обновить сайт на gh-pages-tests:
 
+Обновляешь код в tests.
+
+npm run build
+
+cd dist
+
+git add . && git commit -m "Update deploy" && git push -f origin gh-pages-tests
 
 ----------------------------------------------------------------------------------------------
 ЗАГРУЗКА СТАТЕЙ В FAREBASE ИЗ .JSON
@@ -195,3 +204,4 @@ git push -u origin main
 PS D:\ДИПЛОМ\react-mars\my-mars-app\src\db_firebase> cd db_firebase             
 
 node importToFirestore.cjs 
+node importToFirestoreExhibitions.cjs

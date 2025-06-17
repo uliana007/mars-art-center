@@ -140,3 +140,10 @@
   }
 }
 
+
+
+.hero-video-bg-section video {
+  pointer-events: none;
+}
+
+

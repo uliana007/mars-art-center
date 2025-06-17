@@ -1,3 +1,18 @@
+.bg-cardLight {
+  background: #2D37FF; /* насыщенный синий при светлой теме */
+  transition: background 0.3s;
+}
+/* Для темной темы */
+@media (prefers-color-scheme: dark) {
+  .bg-cardLight {
+    background: #151a3c;
+  }
+}
+.dark .bg-cardLight {
+  background: #151a3c !important;
+}
+
+
 .ex-carousel-outer {
   display: flex;
   align-items: center;

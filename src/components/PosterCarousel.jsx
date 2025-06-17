@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import "../styles/PosterCarousel.css";
+import "../styles/PosterCarousel.css"; // Импортируйте стили для карусели
 
 // Пример данных карточек (замените на API или props)
 const posters = [
@@ -107,7 +107,7 @@ export default function PosterCarousel() {
           />
         ))}
       </div>
-      <div className="carousel-top-week">{t("poster.top_week") || "ТОП недели"}</div>
+      <div className="carousel-top-week text-accentBlue dark:text-white">{t("poster.top_week") || "ТОП недели"}</div>
     </section>
   );
 }

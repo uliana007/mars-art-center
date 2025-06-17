@@ -19,10 +19,6 @@
     "tickets_subtitle": "buy right now"
   }
   },
-  "about": {
-    "title": "About the Center",
-    "desc": "MARS is a center of contemporary art, uniting exhibitions, performances, and technology projects. We create space for experiments and new meanings in art."
-  },
   "projects": {
     "title": "Our Projects",
     "desc": "Exhibitions, VR-shows, performances, lectures, and workshops — we open new forms of interacting with contemporary art.",
@@ -66,5 +62,47 @@
   { "href": "#poster", "title": "POSTER", "subtitle": "exhibitions, VR, performances" },
   { "href": "#about", "title": "ABOUT", "subtitle": "art, technology" },
   { "href": "#tickets", "title": "TICKETS", "subtitle": "buy now" }
-]
+],
+"rules": {
+  "title": "Visiting Rules",
+  "p1": "The MARS Center for Contemporary Art is open daily from 12:00 to 22:00.",
+  "p2": "To visit the Center, you need to purchase a ticket online on our website in the {{ticketsLink}} section, or at the Center’s box office, selecting the project, specific date, and time. A separate ticket is required for each exhibition, except during special promotions.",
+  "p3": "Please note that the {{vrLink}} have limited seating per session. We recommend purchasing tickets online in advance for your preferred time. VR project visits are strictly by session. If you are more than 5 minutes late, your visit may be rescheduled to any Wednesday within the month. Rescheduling is done through the reception administrator by calling +7 (495) 623-66-90. No refunds are issued on the day of the event. Refund policy can be found {{refundLink}}.",
+  "p4": "The Center has a cloakroom. In summer, it operates in self-service mode; in winter, on weekends and holidays, an attendant is present.",
+  "forbidden_title": "Prohibited in the Center:",
+  "forbidden_list": [
+    "Disturbing public order or causing inconvenience to other visitors;",
+    "Bringing food or drinks into exhibition areas;",
+    "Carrying firearms, sharp or cutting objects, flammable, poisonous, toxic, or hazardous substances;",
+    "Negligent use of equipment provided by the Center during the session (VR headset, controllers, etc.);",
+    "Being under the influence of alcohol and/or drugs."
+  ],
+  "p5": "Visitors who violate these rules may be warned by staff. If the violation continues, they may be removed from the Center and held accountable under applicable law.",
+  "links": {
+    "tickets": "TICKETS",
+    "vr": "VR projects",
+    "refund": "HERE"
+  }
+},
+ "media": {
+    "title": "MEDIA",
+    "show_more": "Show more..."
+  },
+  "about": {
+    "title": "M'ARS Center",
+    "name": "M'ARS Center for Contemporary Art",
+    "desc": "MARS is a center of contemporary art, uniting exhibitions, performances, and technology projects. We create space for experiments and new meanings in art.",
+    "desc1": "(M – Moscow, ARS (Lat.) – art) is one of the brightest and most unique places on the art map of Moscow.",
+    "desc2": "A group of young and daring artists who created the first private gallery in the USSR in 1988 laid down two principles that have become unchanging for M'ARS: (1) to introduce the public to the newest and most advanced in contemporary art and (2) to provide its venues to a wide range of contemporary artists, leaving Time and the Viewer to judge and choose.",
+    "desc3": "What is happening today in the world of visual culture? We see that traditional art is 'losing its sacredness', that the powerful visual pleasure offered by graphic design displaces art from its positions, and that technologies of virtual and augmented reality attract the viewer's attention.",
+    "desc4": "M'ARS strives to rekindle the public's interest in art, proving that art and new technologies are not mutually exclusive concepts, and on the contrary, the use of new technologies in art creates an incomparable sensory and emotional experience.",
+    "imageAlt": "Interactive installation at the M'ARS Center",
+    "caption": "Fragment of an interactive installation at the M'ARS Center",
+    "clickToWatch": "Click to watch the video",
+    "playVideo": "Play video about the center",
+    "videoTitle": "About the M'ARS Center"
+  },
+  "videoUnsupported": "Your browser does not support the video playback."
+
+
 }

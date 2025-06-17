@@ -1,66 +1,70 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TicketsPage from "../Pages/TicketsPage";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function VictorsPage() {
+  const { t } = useTranslation();
+
   return (
-    <section className="min-h-[100vh] bg-[#0e1d3c] text-white px-4 py-12 flex flex-col items-center">
+    <section className="min-h-[100vh] bg-[#f1f7fc] dark:bg-[#0a0c46] text-[#1A1A1A] dark:text-white px-4 py-12 flex flex-col items-center transition-colors duration-300">
       <div className="max-w-3xl w-full mx-auto">
         <br />
         <br />
         <br />
         <h1 className="text-center text-4xl md:text-5xl font-bold font-mont mb-10">
-          Правила посещения Центра
+          {t("rules.title")}
         </h1>
-        <div className="space-y-5 text-base md:text-lg text-gray-200 font-sans">
+        <div className="space-y-5 text-base md:text-lg text-black dark:text-white font-sans">
+          <p>{t("rules.p1")}</p>
+
           <p>
-            Центр современного искусства М’АРС открыт для посетителей ежедневно с 12:00 до 22:00.
+            <Trans
+              i18nKey="rules.p2"
+              components={{
+                ticketsLink: (
+                  <Link
+                    to="/tickets"
+                    className="text-blue-600 dark:text-blue-400 underline hover:text-blue-400 dark:hover:text-blue-300 transition"
+                  />
+                ),
+              }}
+            />
           </p>
+
           <p>
-            Для посещения Центра необходимо приобрести билет онлайн на&nbsp;нашем сайте в&nbsp;разделе&nbsp;
-            <Link
-              to="/tickets"
-              className="text-blue-400 underline hover:text-blue-300 transition"
-            >
-              БИЛЕТЫ
-            </Link>
-            , либо в&nbsp;кассе Центра, выбрав проект, конкретную дату и&nbsp;время. На&nbsp;каждую выставку требуется <b>отдельный билет</b>, за&nbsp;исключением акций Центра.
+            <Trans
+              i18nKey="rules.p3"
+              components={{
+                vrLink: (
+                  <Link
+                    to="/vr-projects"
+                    className="text-blue-600 dark:text-blue-400 underline hover:text-blue-400 dark:hover:text-blue-300 transition"
+                  />
+                ),
+                refundLink: (
+                  <a
+                    href="https://marscenter.ru/refund"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 underline hover:text-blue-400 dark:hover:text-blue-300 transition"
+                  />
+                ),
+              }}
+            />
           </p>
-          <p>
-            Обращаем Ваше внимание, что на&nbsp;
-            <Link
-              to="/vr-projects"
-              className="text-blue-400 underline hover:text-blue-300 transition"
-            >
-              проектах виртуальной реальности
-            </Link>
-            &nbsp;присутствует ограничение по&nbsp;количеству мест за&nbsp;сеанс. Рекомендуем заранее приобретать билеты онлайн на&nbsp;желаемое время. Также осведомляем, что посещение проектов виртуальной реальности производится строго по&nbsp;сеансам. В&nbsp;случае опоздания более чем на&nbsp;5&nbsp;минут, посещение проекта может быть перенесено на&nbsp;любую среду в&nbsp;течение месяца. Перенос осуществляется через Администратора ресепшн по&nbsp;телефону 8&nbsp;(495)&nbsp;623-66-90. Возврат в&nbsp;день проведения выставки не&nbsp;осуществляется. С&nbsp;правилами возврата можно ознакомиться&nbsp;
-            <a
-              href="https://marscenter.ru/refund"
-              className="text-blue-400 underline hover:text-blue-300 transition"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ЗДЕСЬ
-            </a>
-            .
-          </p>
-          <p>
-            В нашем Центре имеется гардероб. В летнее время гардероб работает в режиме самообслуживания, в зимний период в выходные и праздничные дни работает гардеробщик.
-          </p>
+
+          <p>{t("rules.p4")}</p>
+
           <div>
-            <p className="mb-2">В Центре запрещается:</p>
+            <p className="mb-2">{t("rules.forbidden_title")}</p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Нарушать общественный порядок, создавать неудобства другим посетителям Центра;</li>
-              <li>Находиться с едой и напитками в выставочных пространствах;</li>
-              <li>Проносить огнестрельное оружие, колющие, режущие предметы, легковоспламеняющиеся, отравляющие, токсичные, ядовитые вещества;</li>
-              <li>Небрежно относиться к оборудованию, выданному Центром на время сеанса (VR-шлем, контроллеры и т.д.);</li>
-              <li>Находиться в состоянии алкогольного и (или) наркотического опьянения.</li>
+              {t("rules.forbidden_list", { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
-          <p>
-            Посетители, нарушившие настоящие правила, могут быть предупреждены сотрудниками Центра о нарушении, а при отказе прекратить нарушение — удалены из Центра и привлечены к ответственности, предусмотренной законодательством.
-          </p>
+
+          <p>{t("rules.p5")}</p>
         </div>
       </div>
     </section>

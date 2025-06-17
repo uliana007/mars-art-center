@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "title": {
+      "ru": "SENSE. ГЕОМЕТРИЯ ЧУВСТВ",
+      "en": "SENSE. GEOMETRY OF FEELINGS"
+    },
+    "artist": {
+      "ru": "Иван Смирнов",
+      "en": "Ivan Smirnov"
+    },
+    "style": {
+      "ru": "Иммерсия",
+      "en": "Immersion"
+    },
+    "type": {
+      "ru": ["Выставка", "Иммерсия"],
+      "en": ["Exhibition", "Immersion"]
+    },
+    "dateStart": "2024-09-27",
+    "dateEnd": "2025-06-30",
+    "age": "0+"
+  },
+  {
+    "id": "2",
+    "title": {
+      "ru": "RE_MEMBER. ВСПОМНИ СЕБЯ",
+      "en": "RE_MEMBER. REMEMBER YOURSELF"
+    },
+    "artist": {
+      "ru": "Алина Петрова",
+      "en": "Alina Petrova"
+    },
+    "style": {
+      "ru": "Иммерсия",
+      "en": "Immersion"
+    },
+    "type": {
+      "ru": ["Выставка", "Иммерсия"],
+      "en": ["Exhibition", "Immersion"]
+    },
+    "dateStart": "2025-02-22",
+    "dateEnd": "2025-06-30",
+    "age": "12+"
+  },
+  {
+    "id": "3",
+    "title": {
+      "ru": "РАСКРЫТИЕ ПОТЕНЦИАЛА ДУШИ",
+      "en": "UNLEASHING THE SOUL'S POTENTIAL"
+    },
+    "artist": {
+      "ru": "Ирина Умарова",
+      "en": "Irina Umarova"
+    },
+    "style": {
+      "ru": "Мастер-класс",
+      "en": "Masterclass"
+    },
+    "type": {
+      "ru": ["Спецпроект", "Семинар", "Мастер-класс"],
+      "en": ["Special Project", "Seminar", "Masterclass"]
+    },
+    "dateStart": "2025-06-13",
+    "dateEnd": "2025-06-13",
+    "age": "18+"
+  },
+  {
+    "id": "4",
+    "title": {
+      "ru": "ПОЛЁТ КОЛИБРИ",
+      "en": "THE FLIGHT OF THE HUMMINGBIRD"
+    },
+    "artist": {
+      "ru": "Павел Лебедев",
+      "en": "Pavel Lebedev"
+    },
+    "style": {
+      "ru": "Акция",
+      "en": "Special Event"
+    },
+    "type": {
+      "ru": ["Акция"],
+      "en": ["Special Event"]
+    },
+    "dateStart": "2025-04-02",
+    "dateEnd": "2025-06-15",
+    "age": "16+"
+  },
+  {
+    "id": "5",
+    "title": {
+      "ru": "СВЕТ И ТЕНЬ",
+      "en": "LIGHT AND SHADOW"
+    },
+    "artist": {
+      "ru": "Мария Волкова",
+      "en": "Maria Volkova"
+    },
+    "style": {
+      "ru": "Иммерсия",
+      "en": "Immersion"
+    },
+    "type": {
+      "ru": ["Выставка"],
+      "en": ["Exhibition"]
+    },
+    "dateStart": "2025-01-15",
+    "dateEnd": "2025-03-30",
+    "age": "14+"
+  },
+  {
+    "id": "6",
+    "title": {
+      "ru": "ПЕРФОРМАНС ВРЕМЕНИ",
+      "en": "PERFORMANCE OF TIME"
+    },
+    "artist": {
+      "ru": "Дмитрий Орлов",
+      "en": "Dmitry Orlov"
+    },
+    "style": {
+      "ru": "Перформанс",
+      "en": "Performance"
+    },
+    "type": {
+      "ru": ["Перформанс"],
+      "en": ["Performance"]
+    },
+    "dateStart": "2025-03-01",
+    "dateEnd": "2025-04-01",
+    "age": "16+"
+  },
+  {
+    "id": "7",
+    "title": {
+      "ru": "ВР-ИСКУССТВО",
+      "en": "VR ART"
+    },
+    "artist": {
+      "ru": "Екатерина Белая",
+      "en": "Ekaterina Belaya"
+    },
+    "style": {
+      "ru": "VR проект",
+      "en": "VR Project"
+    },
+    "type": {
+      "ru": ["VR проект"],
+      "en": ["VR Project"]
+    },
+    "dateStart": "2025-02-01",
+    "dateEnd": "2025-02-28",
+    "age": "6+"
+  },
+  {
+    "id": "8",
+    "title": {
+      "ru": "НОЧЬ МУЗЕЕВ",
+      "en": "MUSEUM NIGHT"
+    },
+    "artist": {
+      "ru": "Артём Козлов",
+      "en": "Artem Kozlov"
+    },
+    "style": {
+      "ru": "Спектакль",
+      "en": "Performance"
+    },
+    "type": {
+      "ru": ["Спектакль"],
+      "en": ["Performance"]
+    },
+    "dateStart": "2025-05-18",
+    "dateEnd": "2025-05-18",
+    "age": "12+"
+  },
+  {
+    "id": "9",
+    "title": {
+      "ru": "КОНЦЕРТ ФОРМ",
+      "en": "CONCERT OF FORMS"
+    },
+    "artist": {
+      "ru": "Юлия Соколова",
+      "en": "Julia Sokolova"
+    },
+    "style": {
+      "ru": "Концерт",
+      "en": "Concert"
+    },
+    "type": {
+      "ru": ["Концерт"],
+      "en": ["Concert"]
+    },
+    "dateStart": "2025-05-25",
+    "dateEnd": "2025-05-25",
+    "age": "6+"
+  },
+  {
+    "id": "10",
+    "title": {
+      "ru": "СЕМИНАР ПО ЦВЕТУ",
+      "en": "COLOR SEMINAR"
+    },
+    "artist": {
+      "ru": "Глеб Новиков",
+      "en": "Gleb Novikov"
+    },
+    "style": {
+      "ru": "Семинар",
+      "en": "Seminar"
+    },
+    "type": {
+      "ru": ["Семинар"],
+      "en": ["Seminar"]
+    },
+    "dateStart": "2025-04-15",
+    "dateEnd": "2025-04-15",
+    "age": "16+"
+  }
+]

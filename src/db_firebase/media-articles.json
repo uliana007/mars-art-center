@@ -100,5 +100,107 @@
       "ru": "<h2 class=\"text-2xl font-bold mb-4\">ПУЛЬС ЗЕМЛИ</h2><p class=\"mb-4\">4 июня в Центре М'АРС прошла уникальная медитация «Пульс Земли». Участники погрузились в глубокое состояние гармонии и сосредоточенности под звуки древних музыкальных инструментов — гонга, бубна, диджериду и варганы.</p><h3 class=\"text-xl font-semibold mb-2\">Как проходила практика</h3><p class=\"mb-4\">В первой части ведущий познакомил гостей с традициями звукового исцеления. После этого началась медитация: каждый мог удобно устроиться и позволить вибрациям инструментов проникнуть в глубины сознания.</p><h3 class=\"text-xl font-semibold mb-2\">Впечатления участников</h3><blockquote class=\"italic mb-2\">«Потрясающее ощущение единения с собой и окружающим миром» — Алексей</blockquote><blockquote class=\"italic mb-4\">«Звук гонга буквально растворяет тревоги. Спасибо за опыт!» — Ксения</blockquote><p>Приглашаем на следующие практики звукового и телесного исцеления в нашем центре!</p><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 4 июня 2025</p><p>Время: 20:00</p><p>Место: Центр М'АРС, Москва</p></div>",
       "en": "<h2 class=\"text-2xl font-bold mb-4\">PULSE OF THE EARTH</h2><p class=\"mb-4\">On June 4, the MARS Center held a unique meditation, 'Pulse of the Earth.' Participants immersed themselves in a deep state of harmony and concentration to the sounds of ancient musical instruments—gong, drum, didgeridoo, and jew's harp.</p><h3 class=\"text-xl font-semibold mb-2\">How the Practice Went</h3><p class=\"mb-4\">In the first part, the host introduced guests to the traditions of sound healing. Then, the meditation began: everyone could settle in comfortably and let the vibrations of the instruments penetrate their consciousness.</p><h3 class=\"text-xl font-semibold mb-2\">Participants' Impressions</h3><blockquote class=\"italic mb-2\">“An amazing feeling of unity with oneself and the world around!” — Alexey</blockquote><blockquote class=\"italic mb-4\">“The sound of the gong literally dissolves worries. Thank you for the experience!” — Ksenia</blockquote><p>We invite you to future sound and body healing practices at our center!</p><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: June 4, 2025</p><p>Time: 20:00</p><p>Place: MARS Center, Moscow</p></div>"
     }
+  },
+  {
+    "id": "7",
+    "date": "02 06 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "МАСТЕР-КЛАСС ПО АКРИЛОВОЙ ЖИВОПИСИ",
+      "en": "ACRYLIC PAINTING WORKSHOP"
+    },
+    "preview": {
+      "ru": "Освойте новые техники на мастер-классе 2 июня",
+      "en": "Master new techniques at the workshop on June 2"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Мастер-класс по акриловой живописи</h2><p class=\"mb-4\">2 июня в Центре М'АРС прошёл мастер-класс по акриловой живописи. Участники познакомились с современными техниками нанесения красок, создали собственные абстрактные работы и получили индивидуальные рекомендации от профессионального художника.</p><blockquote class=\"italic mb-4\">«Потрясающая атмосфера творчества и поддержки!» — Ольга</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 2 июня 2025</p><p>Время: 18:00</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">Acrylic Painting Workshop</h2><p class=\"mb-4\">On June 2, the MARS Center held a workshop on acrylic painting. Participants learned modern paint application techniques, created their own abstract works, and received personal advice from a professional artist.</p><blockquote class=\"italic mb-4\">“Amazing atmosphere of creativity and support!” — Olga</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: June 2, 2025</p><p>Time: 18:00</p><p>Place: MARS Center, Moscow</p></div>"
+    }
+  },
+  {
+    "id": "8",
+    "date": "29 05 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "ЛЕКЦИЯ О СОВРЕМЕННОМ ИСКУССТВЕ",
+      "en": "LECTURE ON CONTEMPORARY ART"
+    },
+    "preview": {
+      "ru": "Погрузитесь в историю искусства XX-XXI веков",
+      "en": "Dive into the history of 20th-21st century art"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Лекция о современном искусстве</h2><p class=\"mb-4\">29 мая в М'АРСе прошла просветительская лекция, посвящённая ключевым направлениям современного искусства. Лектор рассказала о влиянии эпохи модернизма и постмодернизма на творчество сегодняшних художников.</p><blockquote class=\"italic mb-4\">«Очень интересно и доступно рассказано!» — Светлана</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 29 мая 2025</p><p>Время: 19:00</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">Lecture on Contemporary Art</h2><p class=\"mb-4\">On May 29, MARS hosted an educational lecture on major trends in contemporary art. The lecturer discussed the impact of modernism and postmodernism on today's artists.</p><blockquote class=\"italic mb-4\">“Very interesting and clearly explained!” — Svetlana</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: May 29, 2025</p><p>Time: 19:00</p><p>Place: MARS Center, Moscow</p></div>"
+    }
+  },
+  {
+    "id": "9",
+    "date": "25 05 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "АРТ-ФОТОВЫСТАВКА \"МИР В ЦВЕТЕ\"",
+      "en": "ART PHOTO EXHIBITION 'WORLD IN COLOR'"
+    },
+    "preview": {
+      "ru": "Фотовыставка работ молодых авторов",
+      "en": "Photo exhibition of young artists' works"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Арт-фотовыставка \"Мир в цвете\"</h2><p class=\"mb-4\">25 мая в М'АРСе открылась выставка работ молодых фотографов, посвящённая яркости и многообразию мира. Экспозиция включала более 50 снимков, вдохновляющих на творчество и новые открытия.</p><blockquote class=\"italic mb-4\">«Удивительная подборка фотографий — очень вдохновляет!» — Роман</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 25 мая 2025</p><p>Время: 17:00</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">Art Photo Exhibition 'World in Color'</h2><p class=\"mb-4\">On May 25, MARS opened an exhibition of works by young photographers, dedicated to the brightness and diversity of the world. The exposition featured over 50 photos inspiring creativity and discovery.</p><blockquote class=\"italic mb-4\">“Amazing selection of photos—inspiring!” — Roman</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: May 25, 2025</p><p>Time: 17:00</p><p>Place: MARS Center, Moscow</p></div>"
+    }
+  },
+  {
+    "id": "10",
+    "date": "20 05 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "ВЕЧЕР ПОЭЗИИ \"ГОЛОСА СЕРДЦА\"",
+      "en": "\"VOICES OF THE HEART\" POETRY EVENING"
+    },
+    "preview": {
+      "ru": "Современные поэты читают стихи",
+      "en": "Modern poets read their poems"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Вечер поэзии \"Голоса сердца\"</h2><p class=\"mb-4\">20 мая в Центре М'АРС состоялся поэтический вечер, на котором выступили современные авторы с лирическими и философскими произведениями. Атмосфера уюта и вдохновения царила весь вечер.</p><blockquote class=\"italic mb-4\">«Потрясающие выступления — хочется слушать снова и снова!» — Ирина</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 20 мая 2025</p><p>Время: 19:00</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">\"Voices of the Heart\" Poetry Evening</h2><p class=\"mb-4\">On May 20, the MARS Center hosted a poetry evening featuring modern poets presenting lyrical and philosophical works. The atmosphere was cozy and inspiring all evening.</p><blockquote class=\"italic mb-4\">“Amazing performances—I want to listen again and again!” — Irina</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: May 20, 2025</p><p>Time: 19:00</p><p>Place: MARS Center, Moscow</p></div>"
+    }
+  },
+  {
+    "id": "11",
+    "date": "16 05 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "КИНОПОКАЗ: \"ИСКУССТВО БУДУЩЕГО\"",
+      "en": "FILM SCREENING: \"ART OF THE FUTURE\""
+    },
+    "preview": {
+      "ru": "Показ и обсуждение короткометражных фильмов",
+      "en": "Screening and discussion of short films"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Кинопоказ: \"Искусство будущего\"</h2><p class=\"mb-4\">16 мая в М'АРСе прошёл вечер короткометражного кино о современном искусстве и технологиях. После показа состоялось обсуждение с режиссёрами и зрителями.</p><blockquote class=\"italic mb-4\">«Интересный формат — хочется ещё!» — Павел</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 16 мая 2025</p><p>Время: 18:30</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">Film Screening: \"Art of the Future\"</h2><p class=\"mb-4\">On May 16, MARS hosted a short film evening about contemporary art and technology. After the screening, there was a discussion with directors and viewers.</p><blockquote class=\"italic mb-4\">“Interesting format—want more!” — Pavel</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: May 16, 2025</p><p>Time: 18:30</p><p>Place: MARS Center, Moscow</p></div>"
+    }
+  },
+  {
+    "id": "12",
+    "date": "10 05 2025",
+    "type": { "ru": "НОВОСТИ", "en": "NEWS" },
+    "title": {
+      "ru": "АРТ-МАРКЕТ \"РУЧНАЯ РАБОТА\"",
+      "en": "ART MARKET \"HANDMADE\""
+    },
+    "preview": {
+      "ru": "Ярмарка изделий ручной работы и сувениров",
+      "en": "Handmade crafts and souvenirs fair"
+    },
+    "content": {
+      "ru": "<h2 class=\"text-2xl font-bold mb-4\">Арт-маркет \"Ручная работа\"</h2><p class=\"mb-4\">10 мая в Центре М'АРС прошёл арт-маркет изделий ручной работы. Гости смогли приобрести уникальные сувениры, познакомиться с мастерами и поучаствовать в творческих мастер-классах.</p><blockquote class=\"italic mb-4\">«Очень вдохновляющая атмосфера и стильные изделия!» — Марина</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Дата: 10 мая 2025</p><p>Время: 12:00</p><p>Место: Центр М'АРС, Москва</p></div>",
+      "en": "<h2 class=\"text-2xl font-bold mb-4\">Art Market \"Handmade\"</h2><p class=\"mb-4\">On May 10, the MARS Center hosted a handmade crafts market. Guests could buy unique souvenirs, meet the artists, and join creative workshops.</p><blockquote class=\"italic mb-4\">“Very inspiring atmosphere and stylish items!” — Marina</blockquote><hr class=\"my-6\" /><div class=\"text-sm text-gray-400\"><p>Date: May 10, 2025</p><p>Time: 12:00</p><p>Place: MARS Center, Moscow</p></div>"
+    }
   }
 ]

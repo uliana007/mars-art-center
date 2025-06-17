@@ -312,7 +312,7 @@ export default function AboutSection() {
             />
           ))}
         </div>
-        <div className="ex-carousel-footer text-center text-white/80 mt-6 tracking-widest font-mont text-lg">
+             <div className="ex-carousel-footer text-center text-accentBlue dark:text-white mt-6 tracking-widest font-mont text-lg">
           ТОП недели
         </div>
       </div>
