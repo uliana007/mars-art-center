@@ -12,7 +12,7 @@ import slide8 from '../assets/image/slide-8.png';
 import slide9 from '../assets/image/slode-9.png';
 import slide10 from '../assets/image/slide-10.png';
 import slide11 from '../assets/image/slide-11.png';
-import calendarIcon from '../assets/image/planeta-2.png'; // Make sure to add your calendar 
+
 // FIREBASE
 import { db } from "../db_firebase/firebase"; // путь поправь под себя
 import { collection, getDocs } from "firebase/firestore";
@@ -302,33 +302,31 @@ export default function TicketsPage() {
           ))}
         </select>
         {/* Даты */}
-        <div className="relative w-full sm:w-40">
-  <input
-    type="date"
-    id="date-from"
-    className="bg-[#e9eef7] dark:bg-[#353535] text-[#222] dark:text-white px-4 py-2 rounded w-full peer appearance-none border border-black pr-10"
-    value={draftDateRange.from}
-    onChange={e => setDraftDateRange(r => ({ ...r, from: e.target.value }))}
-    onFocus={() => setFromFocused(true)}
-    onBlur={() => setFromFocused(false)}
-    autoComplete="off"
-  />
-  {!(draftDateRange.from || fromFocused) && (
-    <span
-      className="pointer-events-none absolute left-4 top-1 -translate-y-1/2 text-gray-400 dark:text-gray-400 text-base select-none"
-      style={{
-        transition: "opacity 0.10s",
-        opacity: (!draftDateRange.from && !fromFocused) ? 0 : 0,
-      }}
-    >
-      {texts.placeholderDate}
-    </span>
-  )}
-  {/* Иконка календаря - видна только на мобильных (до sm) */}
-  <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none sm:hidden">
-    <img src={calendarIcon} alt="Calendar" className="w-5 h-5" />
-  </div>
-</div>
+        <div className="flex flex-col xs:flex-row gap-2 w-full sm:w-auto relative">
+          <div className="relative w-full sm:w-40">
+            <input
+              type="date"
+              id="date-from"
+              className="bg-[#e9eef7] dark:bg-[#353535] text-[#222] dark:text-white px-4 py-2 rounded w-full peer appearance-none border border-black"
+              value={draftDateRange.from}
+              onChange={e => setDraftDateRange(r => ({ ...r, from: e.target.value }))}
+              onFocus={() => setFromFocused(true)}
+              onBlur={() => setFromFocused(false)}
+              autoComplete="off"
+            />
+            {!(draftDateRange.from || fromFocused) && (
+              <span
+                className="pointer-events-none absolute left-4 top-1 -translate-y-1/2 text-gray-400 dark:text-gray-400 text-base select-none"
+                style={{
+                  transition: "opacity 0.10s",
+                  opacity: (!draftDateRange.from && !fromFocused) ? 0 : 0,
+                }}
+              >
+                {texts.placeholderDate}
+              </span>
+            )}
+          </div>
+        </div>
         {/* Кнопки действий */}
         <div className="flex gap-2 w-full mt-2 sm:mt-0">
           <button
